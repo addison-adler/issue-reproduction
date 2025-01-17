@@ -1,0 +1,20 @@
+{
+    "rootDir": "src",
+    "stagingDir": "out/bsc",
+    "sourceMap": true,
+
+    "retainStagingDir": true,
+    "createPackage": false,
+
+    "autoImportComponentScript": true,
+    "pruneEmptyCodeFiles": false,
+
+    "files": [
+
+        { "src": "./assets/**", "dest": "assets" },
+        { "src": "**/images/**", "dest": "images" },
+        
+        "manifest",
+        "!**/*.md"
+    ]
+}
