@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<component name="User" extends="Base.Node" xmlns:xsi="http:// www.w3.org/ 2001/ XMLSchema-instance" xsi:noNamespaceSchemaLocation="https:// devtools.web.roku.com/ schema/ RokuSceneGraph.xsd">
+    <interface>
+        <field id="isAuthenticated" type="boolean" value="false" />
+        <field id="isSubscribed" type="boolean" value="false" />
+        <field id="subscriptionId" type="string" value="" />
+        <field id="deviceId" type="string" value="" />
+        <field id="profileId" type="string" value="" />
+        <field id="provider" type="string" value="" />
+        <field id="sessionExpiry" type="string" value="" />
+        <field id="authorizedOrigins" type="array" value="[]" />
+        <field id="history" type="node" />
+        <field id="favorites" type="node" />
+    </interface>
+    <script type="text/brightscript" uri="pkg:/source/bslib.brs" />
+</component>
+<!--//# sourceMappingURL=./User.xml.map -->

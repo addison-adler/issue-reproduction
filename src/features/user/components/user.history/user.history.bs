@@ -1,0 +1,4 @@
+
+Sub init ()
+    ? "<User.History>.init()"
+End Sub

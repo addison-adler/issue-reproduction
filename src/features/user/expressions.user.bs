@@ -1,0 +1,20 @@
+
+Function GetUser ()
+    return m.global.user
+End Function
+
+Namespace Promised
+
+    Function GetUser ()
+        user = m.global.user
+        if (invalid <> user) return user
+
+        m.global.AddField("user", "node", false)
+        return invalid
+        ' return DoAction("GetUser").then(Function (result, ctx)
+        '     Global.Set("user", result)
+        '     return result
+        ' End Function)
+    End Function
+
+End Namespace
